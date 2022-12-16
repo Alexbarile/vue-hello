@@ -12,16 +12,26 @@
     <div id="container">
         <div class="container"> 
             <div class="row">
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Nome" v-model="name">  
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Inserisci il tuo nome" v-model="name">  
                 </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Cognome" v-model="surname">  
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Inserisci il tuo cognome" v-model="surname">  
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary"@click="greetings">Vai</button>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-center">
-                    <h1>Benvenuto {{name}} {{surname}}</h1>
+
+                    <!-- usata v-bind -->
+                    <h1 :class="red">Benvenuto {{name}} {{surname}}</h1>
+                </div>
+                <div class="col-12">
+
+                    <!-- richiamo img con data -->
+                    <img :src="image" class="img-width" alt="">
                 </div>
             </div>
         </div>

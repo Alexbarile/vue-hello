@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-.container{
-    width: 70%;
-    margin: 30px auto;
+.container{  
+    margin: 50px auto;
+}
+
+.img-width{
+    width: 150px;
 }
