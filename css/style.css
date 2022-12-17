@@ -9,5 +9,14 @@
 }
 
 .img-width{
-    width: 150px;
+    width: 400px;
+    height: 400px;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-green{
+    color: green;
 }
